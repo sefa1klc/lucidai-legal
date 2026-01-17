@@ -1,202 +1,319 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kullanım Koşulları / Terms of Use - Lucid AI</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
-            color: #e4e4e7; min-height: 100vh; line-height: 1.7;
+            color: #e4e4e7;
+            min-height: 100vh;
+            line-height: 1.7;
         }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
-        .lang-switch { display: flex; justify-content: center; gap: 12px; margin-bottom: 32px; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
         .lang-btn {
-            background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3);
-            color: #8b5cf6; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.2s;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: #8b5cf6;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
         }
-        .lang-btn.active { background: #8b5cf6; color: #fff; }
-        .lang-btn:hover { background: rgba(139, 92, 246, 0.2); }
-        .lang-btn.active:hover { background: #7c3aed; }
-        .header { text-align: center; margin-bottom: 48px; }
-        .logo { font-size: 48px; margin-bottom: 16px; }
-        h1 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-        .subtitle { color: #a1a1aa; font-size: 14px; }
-        h2 { font-size: 20px; font-weight: 600; color: #8b5cf6; margin-top: 32px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(139, 92, 246, 0.2); }
-        p { margin-bottom: 16px; color: #d4d4d8; }
-        ul { margin-bottom: 16px; padding-left: 24px; }
-        li { margin-bottom: 8px; color: #d4d4d8; }
-        .highlight { background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8b5cf6; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
-        .warning { background: rgba(245, 158, 11, 0.1); border-left: 3px solid #f59e0b; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
-        .footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; color: #71717a; font-size: 14px; }
-        a { color: #8b5cf6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .lang-content { display: none; }
-        .lang-content.active { display: block; }
+
+        .lang-btn.active {
+            background: #8b5cf6;
+            color: #fff;
+        }
+
+        .lang-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+        }
+
+        .lang-btn.active:hover {
+            background: #7c3aed;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8b5cf6;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #d4d4d8;
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #d4d4d8;
+        }
+
+        .highlight {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #8b5cf6;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 3px solid #f59e0b;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #71717a;
+            font-size: 14px;
+        }
+
+        a {
+            color: #8b5cf6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="lang-switch">
             <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
             <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
         </div>
+
         <!-- TURKISH CONTENT -->
         <div id="content-tr" class="lang-content active">
             <div class="header">
                 <div class="logo">🌙</div>
                 <h1>Kullanım Koşulları</h1>
-                <p class="subtitle">Lucid AI - Rüya Yorumlama Uygulaması</p>
-                <p class="subtitle">Son Güncelleme: 9 Ocak 2026</p>
+                <p class="subtitle">Lucid AI - Mistik Rehberiniz</p>
+                <p class="subtitle">Son Güncelleme: 18 Ocak 2026</p>
             </div>
-            <p>Bu kullanım koşulları, Lucid AI uygulamasını ("Uygulama") kullanımınızı düzenler. Uygulamayı kullanarak bu koşulları kabul etmiş sayılırsınız.</p>
-            <h2>1. Hizmet Tanımı</h2>
-            <p>Lucid AI, yapay zeka destekli bir rüya yorumlama ve analiz uygulamasıdır. Sunduğumuz hizmetler:</p>
+
+            <p>Bu kullanım koşulları, Lucid AI uygulamasını kullanmanızı düzenler. Uygulamayı indirerek ve kullanarak bu
+                koşulları, ayrıca Gizlilik Politikamızı kabul etmiş sayılırsınız.</p>
+
+            <h2>1. Genişletilmiş Hizmet Tanımı</h2>
+            <p>Lucid AI, yapay zeka destekli kapsamlı bir spiritüel rehberlik uygulamasıdır. Hizmetlerimiz şunları
+                içerir:</p>
             <ul>
-                <li>AI destekli rüya yorumlama ve analiz</li>
-                <li>Rüya günlüğü tutma</li>
-                <li>Rüya görselleştirme</li>
-                <li>Lucid rüya rehberliği</li>
-                <li>Duygu durum takibi</li>
+                <li><strong>Rüya Analizi:</strong> Rüyaların psikolojik ve geleneksel yöntemlerle yorumlanması.</li>
+                <li><strong>Astroloji:</strong> Doğum haritası analizi, günlük burç yorumları ve gökyüzü olayları.</li>
+                <li><strong>Tarot & Fal:</strong> Desteden kart seçimi, kahve falı analizi ve görseller üzerinden
+                    yapılan diğer sembolik yorumlar.</li>
+                <li><strong>Rehberlik:</strong> Kişisel gelişim önerileri, olumlamalar (afirmasyonlar) ve meditasyon
+                    rehberliği.</li>
             </ul>
+
             <div class="warning">
-                <strong>⚠️ Önemli Uyarı:</strong> Lucid AI tarafından sunulan yorumlar eğlence ve kişisel gelişim amaçlıdır. Profesyonel psikolojik veya tıbbi tavsiye yerine geçmez.
+                <strong>⚠️ Önemli Yasal Uyarı (Disclaimer):</strong> Lucid AI tarafından sunulan burç yorumları, tarot
+                açılımları, rüya tabirleri ve fal analizleri tamamen EĞLENCE ve KİŞİSEL GELİŞİM amaçlıdır. Bu
+                uygulama, tıbbi, psikolojik, hukuki veya finansal tavsiye vermez. Geleceği kesin olarak tahmin etme
+                iddiası taşımaz.
             </div>
-            <h2>2. Hesap Oluşturma</h2>
-            <p>Uygulamayı kullanmak için bir hesap oluşturmanız gerekebilir. Hesap oluştururken:</p>
+
+            <h2>2. Hesap ve Kullanım Şartları</h2>
+            <p>Uygulamayı kullanırken:</p>
             <ul>
-                <li>Doğru ve güncel bilgiler sağlamalısınız</li>
-                <li>Hesap güvenliğinizden siz sorumlusunuz</li>
-                <li>Hesabınızı başkalarıyla paylaşmamalısınız</li>
-                <li>13 yaşından büyük olmalısınız</li>
+                <li>13 yaşından büyük olmalısınız (veya ebeveyn iznine sahip olmalısınız).</li>
+                <li>Girdiğiniz doğum bilgileri gibi verilerin doğruluğundan sorumlusunuz.</li>
+                <li>Uygulamayı yasa dışı veya rahatsız edici amaçlarla (örneğin uygunsuz görseller yükleyerek)
+                    kullanamazsınız.</li>
             </ul>
+
             <h2>3. Premium Abonelik</h2>
-            <p>Premium özelliklere erişim için ücretli abonelik gereklidir:</p>
+            <p>Gelişmiş analizlere ve sınırsız özelliklere erişim için Premium abonelik gerekir.</p>
             <ul>
-                <li><strong>Aylık Abonelik:</strong> Her ay otomatik yenilenir</li>
-                <li><strong>Yıllık Abonelik:</strong> Her yıl otomatik yenilenir</li>
+                <li><strong>Ödeme:</strong> Ödemeler Google Play Store hesabınız üzerinden tahsil edilir.</li>
+                <li><strong>Yenileme:</strong> Abonelik, iptal edilmediği sürece otomatik olarak yenilenir.</li>
+                <li><strong>Haklar:</strong> Aboneliğiniz, hesap silinmediği sürece cihazlar arasında taşınabilir (aynı
+                    Google hesabı ile).</li>
             </ul>
-            <p>Abonelikler Google Play Store üzerinden yönetilir. İptal işlemleri için Google Play Store ayarlarını kullanın.</p>
+
             <div class="highlight">
-                <strong>💡 İptal Politikası:</strong> Aboneliğinizi istediğiniz zaman Google Play Store → Abonelikler bölümünden iptal edebilirsiniz. İptal, mevcut dönem sonunda geçerli olur.
+                <strong>💡 İptal:</strong> Aboneliğinizi istediğiniz zaman Google Play Store "Abonelikler" menüsünden
+                yönetebilir veya iptal edebilirsiniz. Uygulamayı silmek aboneliği iptal etmez.
             </div>
-            <h2>4. Kullanıcı Yükümlülükleri</h2>
-            <p>Uygulamayı kullanırken aşağıdakileri yapmamalısınız:</p>
+
+            <h2>4. Fikri Mülkiyet</h2>
             <ul>
-                <li>Yasadışı içerik paylaşmak</li>
-                <li>Başkalarının haklarını ihlal etmek</li>
-                <li>Uygulamanın güvenliğini tehlikeye atmak</li>
-                <li>Otomatik veri toplama araçları kullanmak</li>
-                <li>Uygulamayı tersine mühendislik yapmak</li>
+                <li><strong>Sizin İçeriğiniz:</strong> Rüyalarınız ve yüklediğiniz fotoğraflar size aittir.</li>
+                <li><strong>Bizim İçeriğimiz:</strong> Uygulamanın tasarımı, AI yorumlama algoritmaları, logolar ve
+                    oluşturulan içerikler ElysiumInc.'e aittir. İzinsiz kopyalanamaz.</li>
             </ul>
-            <h2>5. İçerik Sahipliği</h2>
-            <p><strong>Sizin İçeriğiniz:</strong> Kaydettiğiniz rüyalar ve içerikler size aittir. Bize yalnızca hizmet sunmak için gerekli lisansı verirsiniz.</p>
-            <p><strong>Uygulama İçeriği:</strong> Uygulama tasarımı, kodu ve AI modelleri ElysiumInc.'e aittir.</p>
-            <h2>6. AI Kullanımı</h2>
-            <p>Rüya yorumlarımız yapay zeka teknolojisi kullanır. AI yanıtları:</p>
-            <ul>
-                <li>Eğlence ve kişisel gelişim amaçlıdır</li>
-                <li>Profesyonel tavsiye değildir</li>
-                <li>%100 doğruluk garantisi vermez</li>
-                <li>Kişisel kararlarınızın yerine geçmez</li>
-            </ul>
-            <h2>7. Sorumluluk Sınırlaması</h2>
-            <p>Uygulama "olduğu gibi" sunulmaktadır. Şunları garanti etmiyoruz:</p>
-            <ul><li>Kesintisiz hizmet</li><li>Hatasız çalışma</li><li>Belirli sonuçlar</li></ul>
-            <p>Yasaların izin verdiği ölçüde, dolaylı zararlardan sorumlu değiliz.</p>
-            <h2>8. Değişiklikler</h2>
-            <p>Bu koşulları zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içi bildirim göndereceğiz.</p>
-            <h2>9. Uygulanacak Hukuk</h2>
-            <p>Bu koşullar Türkiye Cumhuriyeti yasalarına tabidir. Uyuşmazlıklar İstanbul mahkemelerinde çözülecektir.</p>
-            <h2>10. İletişim</h2>
-            <p>Sorularınız için:</p>
+
+            <h2>5. Sorumluluk Reddi</h2>
+            <p>ElysiumInc., uygulamanın verdiği tavsiyelere dayanarak aldığınız kararlardan (finansal yatırımlar,
+                ilişki kararları vb.) sorumlu tutulamaz. Yapay zeka zaman zaman hatalı veya ilgisiz sonuçlar üretebilir.
+            </p>
+
+            <h2>6. İletişim</h2>
+            <p>Destek ve geri bildirim için:</p>
             <ul>
                 <li><strong>E-posta:</strong> <a href="mailto:contact@jairo.app">contact@jairo.app</a></li>
                 <li><strong>Geliştirici:</strong> ElysiumInc.</li>
             </ul>
+
             <div class="footer">
                 <p>© 2026 Lucid AI - ElysiumInc. Tüm hakları saklıdır.</p>
-                <p style="margin-top: 8px;"><a href="privacy-policy.html">Gizlilik Politikası</a></p>
+                <p style="margin-top: 8px;">
+                    <a href="privacy-policy.html">Gizlilik Politikası</a>
+                </p>
             </div>
         </div>
+
         <!-- ENGLISH CONTENT -->
         <div id="content-en" class="lang-content">
             <div class="header">
                 <div class="logo">🌙</div>
                 <h1>Terms of Use</h1>
-                <p class="subtitle">Lucid AI - Dream Interpretation App</p>
-                <p class="subtitle">Last Updated: January 9, 2026</p>
+                <p class="subtitle">Lucid AI - Your Mystic Guide</p>
+                <p class="subtitle">Last Updated: January 18, 2026</p>
             </div>
-            <p>These terms of use govern your use of the Lucid AI application ("Application"). By using the Application, you agree to these terms.</p>
-            <h2>1. Service Description</h2>
-            <p>Lucid AI is an AI-powered dream interpretation and analysis application. Our services include:</p>
+
+            <p>These terms of use govern your use of the Lucid AI application. By downloading and using the application,
+                you agree to these terms as well as our Privacy Policy.</p>
+
+            <h2>1. Expanded Service Description</h2>
+            <p>Lucid AI is an AI-powered comprehensive spiritual guidance application. Our services include:</p>
             <ul>
-                <li>AI-powered dream interpretation and analysis</li>
-                <li>Dream journaling</li>
-                <li>Dream visualization</li>
-                <li>Lucid dreaming guidance</li>
-                <li>Mood tracking</li>
+                <li><strong>Dream Analysis:</strong> Interpretation of dreams through psychological and traditional
+                    methods.</li>
+                <li><strong>Astrology:</strong> Birth chart analysis, daily horoscopes, and celestial events.</li>
+                <li><strong>Tarot & Fortune:</strong> Card selection from the deck, coffee cup readings, and other
+                    symbolic interpretations from images.</li>
+                <li><strong>Guidance:</strong> Personal development suggestions, affirmations, and meditation guidance.
+                </li>
             </ul>
+
             <div class="warning">
-                <strong>⚠️ Important Notice:</strong> Interpretations provided by Lucid AI are for entertainment and personal growth purposes only. They do not replace professional psychological or medical advice.
+                <strong>⚠️ Important Legal Disclaimer:</strong> Horoscope comments, tarot readings, dream
+                interpretations, and fortune analyses provided by Lucid AI are strictly for ENTERTAINMENT and PERSONAL
+                GROWTH purposes. This application does not provide medical, psychological, legal, or financial advice.
+                It does not claim to predict the future with certainty.
             </div>
-            <h2>2. Account Creation</h2>
-            <p>You may need to create an account to use the Application. When creating an account:</p>
+
+            <h2>2. Account and Usage Terms</h2>
+            <p>When using the application:</p>
             <ul>
-                <li>You must provide accurate and up-to-date information</li>
-                <li>You are responsible for keeping your account secure</li>
-                <li>You must not share your account with others</li>
-                <li>You must be at least 13 years old</li>
+                <li>You must be over 13 years old (or have parental consent).</li>
+                <li>You are responsible for the accuracy of the data you enter, such as birth details.</li>
+                <li>You may not use the application for illegal or offensive purposes (e.g., uploading inappropriate
+                    images).</li>
             </ul>
+
             <h2>3. Premium Subscription</h2>
-            <p>A paid subscription is required to access premium features:</p>
+            <p>Premium subscription is required for access to advanced analyses and unlimited features.</p>
             <ul>
-                <li><strong>Monthly Subscription:</strong> Automatically renews each month</li>
-                <li><strong>Annual Subscription:</strong> Automatically renews each year</li>
+                <li><strong>Payment:</strong> Payments are charged via your Google Play Store account.</li>
+                <li><strong>Renewal:</strong> Subscriptions automatically renew unless canceled.</li>
+                <li><strong>Rights:</strong> Your subscription is portable across devices (with the same Google account)
+                    unless the account is deleted.</li>
             </ul>
-            <p>Subscriptions are managed through Google Play Store. Use Google Play Store settings for cancellations.</p>
+
             <div class="highlight">
-                <strong>💡 Cancellation Policy:</strong> You can cancel your subscription at any time from Google Play Store → Subscriptions. Cancellation takes effect at the end of the current billing period.
+                <strong>💡 Cancellation:</strong> You can manage or cancel your subscription at any time from the Google
+                Play Store "Subscriptions" menu. Deleting the app does not cancel the subscription.
             </div>
-            <h2>4. User Obligations</h2>
-            <p>When using the Application, you must not:</p>
+
+            <h2>4. Intellectual Property</h2>
             <ul>
-                <li>Share illegal content</li>
-                <li>Violate the rights of others</li>
-                <li>Compromise the security of the Application</li>
-                <li>Use automated data collection tools</li>
-                <li>Reverse engineer the Application</li>
+                <li><strong>Your Content:</strong> Your dreams and uploaded photos belong to you.</li>
+                <li><strong>Our Content:</strong> The application design, AI interpretation algorithms, logos, and
+                    generated content belong to ElysiumInc. They may not be copied without permission.</li>
             </ul>
-            <h2>5. Content Ownership</h2>
-            <p><strong>Your Content:</strong> The dreams and content you save belong to you. You grant us only the necessary license to provide our services.</p>
-            <p><strong>Application Content:</strong> The application design, code, and AI models belong to ElysiumInc.</p>
-            <h2>6. AI Usage</h2>
-            <p>Our dream interpretations use artificial intelligence technology. AI responses:</p>
-            <ul>
-                <li>Are for entertainment and personal growth purposes</li>
-                <li>Are not professional advice</li>
-                <li>Do not guarantee 100% accuracy</li>
-                <li>Do not replace your personal decisions</li>
-            </ul>
-            <h2>7. Limitation of Liability</h2>
-            <p>The Application is provided "as is." We do not guarantee:</p>
-            <ul><li>Uninterrupted service</li><li>Error-free operation</li><li>Specific results</li></ul>
-            <p>To the extent permitted by law, we are not liable for indirect damages.</p>
-            <h2>8. Changes</h2>
-            <p>We may update these terms from time to time. We will send an in-app notification for significant changes.</p>
-            <h2>9. Governing Law</h2>
-            <p>These terms are subject to the laws of the Republic of Turkey. Disputes will be resolved in Istanbul courts.</p>
-            <h2>10. Contact</h2>
-            <p>For questions:</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>ElysiumInc. cannot be held responsible for decisions you make based on advice given by the application
+                (financial investments, relationship decisions, etc.). Artificial intelligence may occasionally produce
+                incorrect or irrelevant results.</p>
+
+            <h2>6. Contact</h2>
+            <p>For support and feedback:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:contact@jairo.app">contact@jairo.app</a></li>
                 <li><strong>Developer:</strong> ElysiumInc.</li>
             </ul>
+
             <div class="footer">
                 <p>© 2026 Lucid AI - ElysiumInc. All rights reserved.</p>
-                <p style="margin-top: 8px;"><a href="privacy-policy.html">Privacy Policy</a></p>
+                <p style="margin-top: 8px;">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </p>
             </div>
         </div>
     </div>
@@ -209,4 +326,5 @@
         }
     </script>
 </body>
+
 </html>
