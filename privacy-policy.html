@@ -1,175 +1,304 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gizlilik Politikası / Privacy Policy - Lucid AI</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
-            color: #e4e4e7; min-height: 100vh; line-height: 1.7;
+            color: #e4e4e7;
+            min-height: 100vh;
+            line-height: 1.7;
         }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
-        .lang-switch { display: flex; justify-content: center; gap: 12px; margin-bottom: 32px; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
         .lang-btn {
-            background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3);
-            color: #8b5cf6; padding: 8px 20px; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.2s;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: #8b5cf6;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
         }
-        .lang-btn.active { background: #8b5cf6; color: #fff; }
-        .lang-btn:hover { background: rgba(139, 92, 246, 0.2); }
-        .lang-btn.active:hover { background: #7c3aed; }
-        .header { text-align: center; margin-bottom: 48px; }
-        .logo { font-size: 48px; margin-bottom: 16px; }
-        h1 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-        .subtitle { color: #a1a1aa; font-size: 14px; }
-        h2 { font-size: 20px; font-weight: 600; color: #8b5cf6; margin-top: 32px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(139, 92, 246, 0.2); }
-        p { margin-bottom: 16px; color: #d4d4d8; }
-        ul { margin-bottom: 16px; padding-left: 24px; }
-        li { margin-bottom: 8px; color: #d4d4d8; }
-        .highlight { background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8b5cf6; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
-        .footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; color: #71717a; font-size: 14px; }
-        a { color: #8b5cf6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .lang-content { display: none; }
-        .lang-content.active { display: block; }
+
+        .lang-btn.active {
+            background: #8b5cf6;
+            color: #fff;
+        }
+
+        .lang-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+        }
+
+        .lang-btn.active:hover {
+            background: #7c3aed;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8b5cf6;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #d4d4d8;
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #d4d4d8;
+        }
+
+        .highlight {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #8b5cf6;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #71717a;
+            font-size: 14px;
+        }
+
+        a {
+            color: #8b5cf6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="lang-switch">
             <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
             <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
         </div>
-        <!-- TURKISH -->
+
+        <!-- TURKISH CONTENT -->
         <div id="content-tr" class="lang-content active">
             <div class="header">
                 <div class="logo">🌙</div>
                 <h1>Gizlilik Politikası</h1>
-                <p class="subtitle">Lucid AI - Rüya Yorumlama Uygulaması</p>
-                <p class="subtitle">Son Güncelleme: 9 Ocak 2026</p>
+                <p class="subtitle">Lucid AI - Mistik Rehberiniz</p>
+                <p class="subtitle">Son Güncelleme: 18 Ocak 2026</p>
             </div>
-            <p>Bu gizlilik politikası, Lucid AI ("Uygulama", "biz", "bizim") tarafından sunulan hizmetlerin kullanımı sırasında toplanan, kullanılan ve paylaşılan bilgileri açıklamaktadır.</p>
-            <h2>1. Toplanan Bilgiler</h2>
-            <p>Uygulamamızı kullanırken aşağıdaki bilgileri toplayabiliriz:</p>
+            <p>Bu gizlilik politikası, Lucid AI ("Uygulama", "biz", "bizim") tarafından sunulan rüya analizi, astroloji
+                ve fal hizmetlerinin kullanımı sırasında toplanan, kullanılan ve paylaşılan bilgileri açıklamaktadır.</p>
+
+            <h2>1. Toplanan Kapsamlı Bilgiler</h2>
+            <p>Uygulamamızın tam kapasiteyle çalışabilmesi için aşağıdaki verileri toplayabiliriz:</p>
             <ul>
-                <li><strong>Hesap Bilgileri:</strong> E-posta adresi ve kullanıcı adı</li>
-                <li><strong>Rüya İçerikleri:</strong> Kaydettiğiniz rüya metinleri ve AI tarafından oluşturulan yorumlar</li>
-                <li><strong>Duygu Durumu Verileri:</strong> Mood tracker özelliğini kullandığınızda girdiğiniz duygusal durum bilgileri</li>
-                <li><strong>Ses Kayıtları:</strong> Sesli rüya anlatımı özelliğini kullandığınızda, sesiniz anlık olarak metne dönüştürülür. Ses dosyası işlem tamamlandıktan hemen sonra kalıcı olarak silinir.</li>
-                <li><strong>Kullanım Verileri:</strong> Uygulama kullanım istatistikleri ve performans verileri</li>
+                <li><strong>Hesap Bilgileri:</strong> E-posta adresi, kullanıcı adı ve kayıt tarihi.</li>
+                <li><strong>Astroloji Verileri:</strong> Doğum haritası analizi için doğum tarihiniz, doğum saatiniz ve
+                    doğum yeriniz.</li>
+                <li><strong>Görsel Veriler:</strong> Kahve falı veya el falı gibi özellikler için yüklediğiniz veya
+                    çektiğiniz fotoğraflar. Bu görseller yalnızca analiz anında işlenir.</li>
+                <li><strong>Rüya Kayıtları:</strong> Günlüğünüze kaydettiğiniz rüya metinleri ve sesli anlatımlar.</li>
+                <li><strong>Etkileşim Verileri:</strong> Seçtiğiniz Tarot kartları, sorduğunuz sorular ve yaptığınız
+                    onaylamalar (afirmasyonlar).</li>
+                <li><strong>Ses Verileri:</strong> Analiz için kaydedilen ses verileri metne dönüştürülür ve işlenir.
+                </li>
             </ul>
-            <h2>2. Bilgilerin Kullanımı</h2>
-            <p>Topladığımız bilgileri şu amaçlarla kullanıyoruz:</p>
+
+            <h2>2. Bilgilerin Kullanım Alanları</h2>
+            <p>Verilerinizi size kişiselleştirilmiş bir deneyim sunmak için kullanıyoruz:</p>
             <ul>
-                <li>Rüya yorumlama ve analiz hizmetlerini sunmak</li>
-                <li>Kişiselleştirilmiş içerik ve öneriler sağlamak</li>
-                <li>Uygulama performansını iyileştirmek</li>
-                <li>Müşteri desteği sağlamak</li>
-                <li>Yasal yükümlülüklerimizi yerine getirmek</li>
+                <li><strong>Kişisel Analiz:</strong> Doğum haritanıza özel günlük burç yorumları ve uyum analizleri
+                    üretmek.</li>
+                <li><strong>Görsel İşleme:</strong> Kahve fincanı veya diğer ritüel nesnelerin fotoğraflarını yapay zeka
+                    ile analiz edip yorumlamak.</li>
+                <li><strong>Rüya Yorumu:</strong> Rüyalarınızdaki sembolleri psikolojik ve mistik açılardan analiz
+                    etmek.</li>
+                <li><strong>Hizmet İyileştirme:</strong> Uygulama içi deneyimi geliştirmek ve doğru içerikler sunmak.
+                </li>
             </ul>
+
             <div class="highlight">
-                <strong>🔒 Veri Güvenliği:</strong> Rüya içerikleriniz şifreli olarak saklanır ve üçüncü taraflarla paylaşılmaz. AI analizi için kullanılan veriler anonim olarak işlenir.
+                <strong>🔒 Görsel Gizliliği:</strong> Fal analizi için gönderdiğiniz fotoğraflar (kahve, el vb.) sadece
+                analiz süresince sunucularımızda anlık olarak işlenir ve analiz tamamlandıktan sonra kalıcı olarak
+                saklanmaz.
             </div>
+
             <h2>3. Veri Paylaşımı</h2>
-            <p>Kişisel verilerinizi aşağıdaki durumlar dışında üçüncü taraflarla paylaşmayız:</p>
+            <p>Kişisel verileriniz gizlidir. Yalnızca hizmetin çalışması için zorunlu olan şu taraflarla paylaşılır:</p>
             <ul>
-                <li><strong>Hizmet Sağlayıcıları:</strong> Supabase (veritabanı), Gemini (AI analizi), RevenueCat (abonelik yönetimi)</li>
-                <li><strong>Yasal Gereklilikler:</strong> Yasal zorunluluk halinde yetkili makamlarla</li>
-                <li><strong>İzninizle:</strong> Açık onayınız olduğunda</li>
+                <li><strong>AI Partnerleri:</strong> Gemini/OpenAI (Metin ve görsel analiz motorları)</li>
+                <li><strong>Altyapı:</strong> Supabase (Şifreli veri saklama)</li>
+                <li><strong>Ödeme:</strong> Google Play & RevenueCat (Abonelik işlemleri - Kart bilgileriniz bizde
+                    saklanmaz)</li>
             </ul>
-            <h2>4. Veri Saklama</h2>
-            <p>Verilerinizi hesabınız aktif olduğu sürece saklarız. Hesabınızı sildiğinizde, tüm kişisel verileriniz 30 gün içinde kalıcı olarak silinir.</p>
+
+            <h2>4. Veri Güvenliği ve Saklama</h2>
+            <p>Tüm verileriniz endüstri standardı şifreleme ile korunur. Hesabınızı sildiğinizde, astroloji verileriniz,
+                farlarınız ve rüya kayıtlarınız dahil tüm veriler 30 gün içinde kalıcı olarak silinir.</p>
+
             <h2>5. Kullanıcı Hakları</h2>
-            <p>KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
-            <ul>
-                <li>Verilerinize erişim hakkı</li>
-                <li>Verilerinizin düzeltilmesini talep etme hakkı</li>
-                <li>Verilerinizin silinmesini talep etme hakkı</li>
-                <li>Veri işlemeye itiraz etme hakkı</li>
-                <li>Veri taşınabilirliği hakkı</li>
-            </ul>
-            <h2>6. Çocukların Gizliliği</h2>
-            <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaşın altındaki çocuklardan kişisel bilgi toplamayız.</p>
-            <h2>7. Abonelik ve Ödeme</h2>
-            <p>Premium abonelik işlemleri Google Play Store üzerinden gerçekleştirilir. Ödeme bilgileriniz tarafımızca saklanmaz.</p>
-            <h2>8. Politika Değişiklikleri</h2>
-            <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda uygulama içi bildirim göndereceğiz.</p>
-            <h2>9. İletişim</h2>
-            <p>Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <p>KVKK ve GDPR uyarınca verilerinize erişme, düzeltme ve silme hakkına sahipsiniz. Ayrıca astroloji gibi
+                hassas verilerin işlenmesini durdurmayı talep edebilirsiniz.</p>
+
+            <h2>6. İletişim</h2>
+            <p>Sorularınız için:</p>
             <ul>
                 <li><strong>E-posta:</strong> <a href="mailto:contact@jairo.app">contact@jairo.app</a></li>
                 <li><strong>Geliştirici:</strong> ElysiumInc.</li>
             </ul>
+
             <div class="footer">
                 <p>© 2026 Lucid AI - ElysiumInc. Tüm hakları saklıdır.</p>
-                <p style="margin-top: 8px;"><a href="terms.html">Kullanım Koşulları</a></p>
+                <p style="margin-top: 8px;">
+                    <a href="terms.html">Kullanım Koşulları</a>
+                </p>
             </div>
         </div>
-        <!-- ENGLISH -->
+
+        <!-- ENGLISH CONTENT -->
         <div id="content-en" class="lang-content">
             <div class="header">
                 <div class="logo">🌙</div>
                 <h1>Privacy Policy</h1>
-                <p class="subtitle">Lucid AI - Dream Interpretation App</p>
-                <p class="subtitle">Last Updated: January 9, 2026</p>
+                <p class="subtitle">Lucid AI - Your Mystic Guide</p>
+                <p class="subtitle">Last Updated: January 18, 2026</p>
             </div>
-            <p>This privacy policy explains the information collected, used, and shared during your use of services provided by Lucid AI ("Application", "we", "our").</p>
-            <h2>1. Information We Collect</h2>
-            <p>We may collect the following information when you use our application:</p>
+            <p>This privacy policy explains the information collected, used, and shared during your use of the review
+                analysis, astrology, and fortune-telling services provided by Lucid AI ("Application", "we", "our").</p>
+
+            <h2>1. Comprehensive Information Collected</h2>
+            <p>To operate our application at full capacity, we may collect the following data:</p>
             <ul>
-                <li><strong>Account Information:</strong> Email address and username</li>
-                <li><strong>Dream Content:</strong> Dream texts you save and AI-generated interpretations</li>
-                <li><strong>Mood Data:</strong> Emotional state information you enter when using the mood tracker feature</li>
-                <li><strong>Voice Recordings:</strong> When you use the voice dream narration feature, your voice is instantly converted to text. The audio file is permanently deleted immediately after processing.</li>
-                <li><strong>Usage Data:</strong> Application usage statistics and performance data</li>
+                <li><strong>Account Information:</strong> Email address, username, and registration date.</li>
+                <li><strong>Astrological Data:</strong> Your birth date, birth time, and birth place for birth chart
+                    analysis.</li>
+                <li><strong>Visual Data:</strong> Photos you upload or take for features like Coffee Reading or Palm
+                    Reading. These images are processed only at the moment of analysis.</li>
+                <li><strong>Dream Records:</strong> Dream texts and voice narrations saved in your journal.</li>
+                <li><strong>Interaction Data:</strong> Tarot cards you select, questions you ask, and affirmations you
+                    make.</li>
+                <li><strong>Voice Data:</strong> Voice data recorded for analysis is converted to text and processed.
+                </li>
             </ul>
+
             <h2>2. Use of Information</h2>
-            <p>We use the information we collect for the following purposes:</p>
+            <p>We use your data to provide you with a personalized experience:</p>
             <ul>
-                <li>To provide dream interpretation and analysis services</li>
-                <li>To provide personalized content and recommendations</li>
-                <li>To improve application performance</li>
-                <li>To provide customer support</li>
-                <li>To fulfill our legal obligations</li>
+                <li><strong>Personal Analysis:</strong> Generating daily horoscopes and compatibility analyses specific
+                    to your birth chart.</li>
+                <li><strong>Image Processing:</strong> Analyzing and interpreting photos of coffee cups or other ritual
+                    objects using artificial intelligence.</li>
+                <li><strong>Dream Interpretation:</strong> Analyzing symbols in your dreams from psychological and
+                    mystical perspectives.</li>
+                <li><strong>Service Improvement:</strong> Enhancing the in-app experience and delivering accurate
+                    content.</li>
             </ul>
+
             <div class="highlight">
-                <strong>🔒 Data Security:</strong> Your dream content is stored encrypted and not shared with third parties. Data used for AI analysis is processed anonymously.
+                <strong>🔒 Visual Privacy:</strong> Photos submitted for fortune analysis (coffee, palm, etc.) are
+                processed instantly on our servers only during the analysis and are not permanently stored after the
+                analysis is complete.
             </div>
+
             <h2>3. Data Sharing</h2>
-            <p>We do not share your personal data with third parties except in the following cases:</p>
+            <p>Your personal data is confidential. It is shared only with the following parties necessary for the service
+                to operate:</p>
             <ul>
-                <li><strong>Service Providers:</strong> Supabase (database), OpenAI (AI analysis), RevenueCat (subscription management)</li>
-                <li><strong>Legal Requirements:</strong> With authorities when legally required</li>
-                <li><strong>With Your Consent:</strong> When you give explicit permission</li>
+                <li><strong>AI Partners:</strong> Gemini/OpenAI (Text and image analysis engines)</li>
+                <li><strong>Infrastructure:</strong> Supabase (Encrypted data storage)</li>
+                <li><strong>Payment:</strong> Google Play & RevenueCat (Subscription transactions - we do not store your
+                    card details)</li>
             </ul>
-            <h2>4. Data Retention</h2>
-            <p>We retain your data as long as your account is active. When you delete your account, all your personal data is permanently deleted within 30 days.</p>
+
+            <h2>4. Data Security and Retention</h2>
+            <p>All your data is protected by industry-standard encryption. When you delete your account, all data,
+                including astrological data, fortunes, and dream records, is permanently deleted within 30 days.</p>
+
             <h2>5. User Rights</h2>
-            <p>Under KVKK and GDPR, you have the following rights:</p>
-            <ul>
-                <li>Right to access your data</li>
-                <li>Right to request correction of your data</li>
-                <li>Right to request deletion of your data</li>
-                <li>Right to object to data processing</li>
-                <li>Right to data portability</li>
-            </ul>
-            <h2>6. Children's Privacy</h2>
-            <p>Our application is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
-            <h2>7. Subscription and Payment</h2>
-            <p>Premium subscription transactions are processed through Google Play Store. Your payment information is not stored by us.</p>
-            <h2>8. Policy Changes</h2>
-            <p>We may update this privacy policy from time to time. We will send an in-app notification when significant changes occur.</p>
-            <h2>9. Contact</h2>
-            <p>For questions about our privacy policy, you can contact us:</p>
+            <p>Under GDPR and local laws, you have the right to access, correct, and delete your data. You may also
+                request to stop processing sensitive data such as astrology.</p>
+
+            <h2>6. Contact</h2>
+            <p>For questions:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:contact@jairo.app">contact@jairo.app</a></li>
                 <li><strong>Developer:</strong> ElysiumInc.</li>
             </ul>
+
             <div class="footer">
                 <p>© 2026 Lucid AI - ElysiumInc. All rights reserved.</p>
-                <p style="margin-top: 8px;"><a href="terms.html">Terms of Use</a></p>
+                <p style="margin-top: 8px;">
+                    <a href="terms.html">Terms of Use</a>
+                </p>
             </div>
         </div>
     </div>
@@ -182,4 +311,5 @@
         }
     </script>
 </body>
+
 </html>
