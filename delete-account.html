@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesap ve Veri Silme - Lucid AI</title>
+    <title>Hesap ve Veri Silme / Account and Data Deletion - Lucid AI</title>
     <style>
         * {
             margin: 0;
@@ -142,7 +142,7 @@
             opacity: 0.9;
             text-decoration: none;
         }
-        
+
         .lang-switch {
             display: flex;
             justify-content: center;
@@ -159,6 +159,7 @@
             cursor: pointer;
             font-weight: 600;
             transition: all 0.2s;
+            border: none;
         }
 
         .lang-btn.active {
@@ -169,7 +170,11 @@
         .lang-btn:hover {
             background: rgba(139, 92, 246, 0.2);
         }
-        
+
+        .lang-btn.active:hover {
+            background: #7c3aed;
+        }
+
         .lang-content {
             display: none;
         }
@@ -187,142 +192,160 @@
             <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
         </div>
 
+        <!-- TURKISH CONTENT -->
         <div id="content-tr" class="lang-content active">
-             <div class="header">
-                 <div class="logo">🗑️</div>
-                 <h1>Hesap ve Veri Silme</h1>
-                 <p class="subtitle">Lucid AI - Kullanıcı Verileri Yönetimi</p>
-             </div>
-     
-             <p>Lucid AI olarak gizliliğinize önem veriyoruz. Hesabınızı ve uygulamanın topladığı tüm verileri istediğiniz
-                 zaman kalıcı olarak silebilirsiniz.</p>
-     
-             <h2>1. Uygulama Üzerinden Silme (Önerilen)</h2>
-             <p>En hızlı yöntem, uygulama içerisindeki ayarları kullanmaktır:</p>
-             <div class="instruction-box">
-                 <div class="step">
-                     <div class="step-number">1</div>
-                     <div class="step-text">Lucid AI uygulamasını açın.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">2</div>
-                     <div class="step-text">Profil sekmesine gidin.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">3</div>
-                     <div class="step-text">Sayfanın altındaki <strong>"Hesap Yönetimi"</strong> bölümüne gelin.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">4</div>
-                     <div class="step-text"><strong>"Hesabı ve Verileri Sil"</strong> butonuna basın ve onaylayın.</div>
-                 </div>
-             </div>
-     
-             <h2>2. Web Üzerinden Talep Etme</h2>
-             <p>Uygulamaya erişemiyorsanız, e-posta yoluyla silme talebinde bulunabilirsiniz. Talebiniz 7 iş günü içerisinde
-                 işleme alınacaktır.</p>
-             <div class="instruction-box">
-                 <p>Aşağıdaki butona tıklayarak veya doğrudan e-posta göndererek talebinizi iletebilirsiniz:</p>
-                 <a href="mailto:contact@jairo.app?subject=Hesap Silme Talebi&body=Merhaba, Lucid AI hesabımdaki tüm verilerin kalıcı olarak silinmesini istiyorum. Kayıtlı e-posta adresim: "
-                     class="button">Silme Talebi Gönder</a>
-                 <p style="margin-top: 16px; font-size: 13px; color: #a1a1aa;">Destek E-postası: contact@jairo.app</p>
-             </div>
-     
-             <div class="warning-box">
-                 <div class="warning-title">⚠️ Dikkat: Bu İşlem Geri Alınamaz!</div>
-                 <p style="font-size: 14px;">Hesabınızı sildiğinizde aşağıdaki veriler kalıcı olarak silinecektir:</p>
-                 <ul style="margin-left: 20px; font-size: 14px; margin-top: 8px;">
-                     <li>Kullanıcı profiliniz ve giriş bilgileriniz</li>
-                     <li>Tüm kayıtlı rüyalarınız ve analizleriniz</li>
-                     <li>Kayıtlı Burç ve Tarot geçmişiniz</li>
-                     <li>Duygu durumu ve diğer kişisel ilerleme verileriniz</li>
-                 </ul>
-                 <p style="margin-top: 12px; font-size: 14px; font-weight: 500;">Not: Satın aldığınız abonelikler Google Play
-                     Store üzerinden kontrol edilir. Hesabı silseniz bile aboneliği iptal etmek için Google Play Store
-                     ayarlarına bakmanız gerekmektedir.</p>
-             </div>
-     
-             <h2>3. Veri Saklama Süresi</h2>
-             <p>Silme talebiniz onaylandığında verileriniz veritabanımızdan derhal silinir. Yedekleme sistemlerimizdeki
-                 kayıtlar ise maksimum 30 gün içerisinde otomatik olarak temizlenir.</p>
-     
-             <div class="footer">
-                 <p>© 2026 Lucid AI - ElysiumInc. Tüm hakları saklıdır.</p>
-                 <p style="margin-top: 8px;">
-                     <a href="privacy-policy.html">Gizlilik Politikası</a> | <a href="terms.html">Kullanım Koşulları</a>
-                 </p>
-             </div>
+            <div class="header">
+                <div class="logo">🗑️</div>
+                <h1>Hesap ve Veri Silme</h1>
+                <p class="subtitle">Lucid AI - Kullanıcı Verileri Yönetimi</p>
+            </div>
+
+            <p>Lucid AI olarak gizliliğinize önem veriyoruz. Hesabınızı ve uygulamanın topladığı tüm verileri
+                istediğiniz
+                zaman kalıcı olarak silebilirsiniz.</p>
+
+            <h2>1. Uygulama Üzerinden Silme (Önerilen)</h2>
+            <p>En hızlı yöntem, uygulama içerisindeki ayarları kullanmaktır:</p>
+            <div class="instruction-box">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Lucid AI uygulamasını açın.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Profil sekmesine gidin.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Sayfanın altındaki <strong>"Hesap Yönetimi"</strong> bölümüne gelin.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text"><strong>"Hesabı ve Verileri Sil"</strong> butonuna basın ve onaylayın.</div>
+                </div>
+            </div>
+
+            <h2>2. Web Üzerinden Talep Etme</h2>
+            <p>Uygulamaya erişemiyorsanız, e-posta yoluyla silme talebinde bulunabilirsiniz. Talebiniz 7 iş günü
+                içerisinde
+                işleme alınacaktır.</p>
+            <div class="instruction-box">
+                <p>Aşağıdaki butona tıklayarak veya doğrudan e-posta göndererek talebinizi iletebilirsiniz:</p>
+                <a href="mailto:contact@jairo.app?subject=Hesap Silme Talebi&body=Merhaba, Lucid AI hesabımdaki tüm verilerin kalıcı olarak silinmesini istiyorum. Kayıtlı e-posta adresim: "
+                    class="button">Silme Talebi Gönder</a>
+                <p style="margin-top: 16px; font-size: 13px; color: #a1a1aa;">Destek E-postası: contact@jairo.app</p>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Dikkat: Bu İşlem Geri Alınamaz!</div>
+                <p style="font-size: 14px;">Hesabınızı sildiğinizde aşağıdaki veriler kalıcı olarak silinecektir:</p>
+                <ul style="margin-left: 20px; font-size: 14px; margin-top: 8px;">
+                    <li>Kullanıcı profiliniz ve giriş bilgileriniz</li>
+                    <li>Tüm kayıtlı rüyalarınız, sesli kayıtlarınız ve analizleriniz</li>
+                    <li>Cosmic Wall üzerinde paylaştığınız tüm gönderiler</li>
+                    <li>Kayıtlı burç seçimi bilgileriniz</li>
+                    <li>Tarot ve fal geçmişiniz (kahve falı, el falı vb.)</li>
+                    <li>Duygu durumu grafikleri ve haftalık ruh analizleriniz</li>
+                    <li>XP puanlarınız, seviye bilgileriniz ve rozetleriniz</li>
+                    <li>Kaydedilmiş semboller ve favori tabirleriniz</li>
+                    <li>Tüm kişisel tercihleriniz ve ayarlarınız</li>
+                </ul>
+                <p style="margin-top: 12px; font-size: 14px; font-weight: 500;">Not: Satın aldığınız abonelikler Google
+                    Play
+                    Store üzerinden kontrol edilir. Hesabı silseniz bile aboneliği iptal etmek için Google Play Store
+                    ayarlarına bakmanız gerekmektedir.</p>
+            </div>
+
+            <h2>3. Veri Saklama Süresi</h2>
+            <p>Silme talebiniz onaylandığında verileriniz veritabanımızdan derhal silinir. Yedekleme sistemlerimizdeki
+                kayıtlar ise maksimum 30 gün içerisinde otomatik olarak temizlenir.</p>
+
+            <div class="footer">
+                <p>© 2026 Lucid AI - ElysiumInc. Tüm hakları saklıdır.</p>
+                <p style="margin-top: 8px;">
+                    <a href="privacy-policy.html">Gizlilik Politikası</a> | <a href="terms.html">Kullanım Koşulları</a>
+                </p>
+            </div>
         </div>
 
+        <!-- ENGLISH CONTENT -->
         <div id="content-en" class="lang-content">
-             <div class="header">
-                 <div class="logo">🗑️</div>
-                 <h1>Account and Data Deletion</h1>
-                 <p class="subtitle">Lucid AI - User Data Management</p>
-             </div>
-     
-             <p>At Lucid AI, we value your privacy. You can permanently delete your account and all data collected by the
-                 application at any time.</p>
-     
-             <h2>1. Delete via App (Recommended)</h2>
-             <p>The fastest method is to use the settings within the application:</p>
-             <div class="instruction-box">
-                 <div class="step">
-                     <div class="step-number">1</div>
-                     <div class="step-text">Open the Lucid AI application.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">2</div>
-                     <div class="step-text">Go to the Profile tab.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">3</div>
-                     <div class="step-text">Scroll to the <strong>"Account Management"</strong> section at the bottom of
-                         the page.</div>
-                 </div>
-                 <div class="step">
-                     <div class="step-number">4</div>
-                     <div class="step-text">Tap the <strong>"Delete Account and Data"</strong> button and confirm.</div>
-                 </div>
-             </div>
-     
-             <h2>2. Request via Web</h2>
-             <p>If you cannot access the application, you can request deletion via email. Your request will be processed
-                 within 7 business days.</p>
-             <div class="instruction-box">
-                 <p>You can submit your request by clicking the button below or by sending an email directly:</p>
-                 <a href="mailto:contact@jairo.app?subject=Account Deletion Request&body=Hello, I would like all my data in my Lucid AI account to be permanently deleted. My registered email address is: "
-                     class="button">Send Deletion Request</a>
-                 <p style="margin-top: 16px; font-size: 13px; color: #a1a1aa;">Support Email: contact@jairo.app</p>
-             </div>
-     
-             <div class="warning-box">
-                 <div class="warning-title">⚠️ Warning: This Action Cannot Be Undone!</div>
-                 <p style="font-size: 14px;">When you delete your account, the following data will be permanently deleted:</p>
-                 <ul style="margin-left: 20px; font-size: 14px; margin-top: 8px;">
-                     <li>Your user profile and login information</li>
-                     <li>All your saved dreams and analyses</li>
-                     <li>Saved Horoscope and Tarot history</li>
-                     <li>Mood history and other personal progress data</li>
-                 </ul>
-                 <p style="margin-top: 12px; font-size: 14px; font-weight: 500;">Note: Subscriptions you have purchased are
-                     controlled through Google Play Store. Even if you delete your account, you need to check Google Play
-                     Store settings to cancel your subscription.</p>
-             </div>
-     
-             <h2>3. Data Retention Period</h2>
-             <p>When your deletion request is approved, your data is immediately deleted from our database. Records in our
-                 backup systems are automatically cleaned within a maximum of 30 days.</p>
-     
-             <div class="footer">
-                 <p>© 2026 Lucid AI - ElysiumInc. All rights reserved.</p>
-                 <p style="margin-top: 8px;">
-                     <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
-                 </p>
-             </div>
+            <div class="header">
+                <div class="logo">🗑️</div>
+                <h1>Account and Data Deletion</h1>
+                <p class="subtitle">Lucid AI - User Data Management</p>
+            </div>
+
+            <p>At Lucid AI, we value your privacy. You can permanently delete your account and all data collected by the
+                application at any time.</p>
+
+            <h2>1. Delete via App (Recommended)</h2>
+            <p>The fastest method is to use the settings within the application:</p>
+            <div class="instruction-box">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Open the Lucid AI application.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Go to the Profile tab.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Scroll to the <strong>"Account Management"</strong> section at the bottom of
+                        the page.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Tap the <strong>"Delete Account and Data"</strong> button and confirm.</div>
+                </div>
+            </div>
+
+            <h2>2. Request via Web</h2>
+            <p>If you cannot access the application, you can request deletion via email. Your request will be processed
+                within 7 business days.</p>
+            <div class="instruction-box">
+                <p>You can submit your request by clicking the button below or by sending an email directly:</p>
+                <a href="mailto:contact@jairo.app?subject=Account Deletion Request&body=Hello, I would like all my data in my Lucid AI account to be permanently deleted. My registered email address is: "
+                    class="button">Send Deletion Request</a>
+                <p style="margin-top: 16px; font-size: 13px; color: #a1a1aa;">Support Email: contact@jairo.app</p>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Warning: This Action Cannot Be Undone!</div>
+                <p style="font-size: 14px;">When you delete your account, the following data will be permanently
+                    deleted:</p>
+                <ul style="margin-left: 20px; font-size: 14px; margin-top: 8px;">
+                    <li>Your user profile and login credentials</li>
+                    <li>All saved dreams, voice recordings, and analyses</li>
+                    <li>All posts you shared on Cosmic Wall</li>
+                    <li>Saved zodiac sign selection</li>
+                    <li>Tarot and fortune history (coffee fortune, palm reading, etc.)</li>
+                    <li>Mood charts and weekly soul analyses</li>
+                    <li>Your XP points, level information, and badges</li>
+                    <li>Saved symbols and favorite interpretations</li>
+                    <li>All personal preferences and settings</li>
+                </ul>
+                <p style="margin-top: 12px; font-size: 14px; font-weight: 500;">Note: Subscriptions you have purchased
+                    are
+                    controlled through Google Play Store. Even if you delete your account, you need to check Google Play
+                    Store settings to cancel your subscription.</p>
+            </div>
+
+            <h2>3. Data Retention Period</h2>
+            <p>When your deletion request is approved, your data is immediately deleted from our database. Records in
+                our
+                backup systems are automatically cleaned within a maximum of 30 days.</p>
+
+            <div class="footer">
+                <p>© 2026 Lucid AI - ElysiumInc. All rights reserved.</p>
+                <p style="margin-top: 8px;">
+                    <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+                </p>
+            </div>
         </div>
     </div>
-    
+
     <script>
         function switchLang(lang) {
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
